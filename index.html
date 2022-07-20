@@ -1,187 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style_page_principal.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <nav class="nav_bar">
-        <div class="logo_header">
-          <span class="logo" alt="">J<span>S</span></span>
-        </div>
-        <ul class="menu" id="menu">
-          <li class="menu_item">
-            <a href="#home">HOME</a>
-          </li>
-          <li class="menu_item"><a href="#about">ABOUT</a></li>
-          <li class="menu_item"><a href="#portfolio">PORTFOLIO</a></li>
-          <li class="menu_item"><a href="#skills">SKILLS</a></li>
-          <li class="menu_item"><a href="#contacs">CONTACS</a></li>
-        </ul>
-        <a class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></a>
-        <hr />
-      </nav>
-    </header>
 
-    <div class="cover">
-      <div class="bg_color"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style_page_principal.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css" />
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav_bar">
+      <div class="logo_header">
+        <span class="logo" alt="">J<span>S</span></span>
+      </div>
+      <ul class="menu" id="menu">
+        <li class="menu_item">
+          <a href="#home">HOME</a>
+        </li>
+        <li class="menu_item"><a href="#about">ABOUT</a></li>
+        <li class="menu_item"><a href="#portfolio">PORTFOLIO</a></li>
+        <li class="menu_item"><a href="#skills">SKILLS</a></li>
+        <li class="menu_item"><a href="#contacs">CONTACS</a></li>
+      </ul>
+      <a class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></a>
+      <hr />
+    </nav>
+  </header>
+
+ 
+  <section id="home">
+    <div class="container_presentation">
+      <div class="text_presentation">
+        <h2 class="hi">Hi</h2>
+        <h2 class="text_profesion">I’m Engineering system</h2>
+        <h3>Santiago <span>orjuela</span></h3>
+        <p>
+          <span>Front-End Developer</span> emphasized in web environments with
+          diverse in<span> Back-End</span>
+        </p>
+        <div class="btn-presentation">
+          <a href="https://drive.google.com/drive/u/1/my-drive">Download CV </a>
+          <a href="#contacs">Contac me </a>
+        </div>
+      </div>
+      <div class="photo_presentation">
+        <img src="img/foto.png" class="photo" alt="" />
+      </div>
     </div>
-    <section id="home">
-      <div class="container_presentation">
-        <div class="text_presentation">
-          <h2 class="hi">Hi</h2>
-          <h2 class="text_profesion">I’m Engineering system</h2>
-          <h3>Santiago <span>orjuela</span></h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
-            non quis exercitationem culpa nesciunt nihil aut nostrum explicabo
-            reprehenderit optio amet ab temporibus asperiores quasi cupiditate.
-            Voluptatum ducimus voluptates voluptas?
-          </p>
-          <div class="btn-presentation">
-            <a href="">Download CV </a>
-            <a href="">Contac me </a>
+  </section>
+  <section id="about">
+    <div class="about_container">
+      <div class="about_photo">
+        <img src="img/Designer _Flatline.svg" alt="" />
+      </div>
+      <div class="about_me">
+        <h2>About me</h2>
+        <p>
+          Systems engineering student last semester of the
+           Autonomous University of Colombia, Extensive knowledge, domain in the
+           analysis, and development of web environments. I characterize myself as a
+           person who relates well in a team and contributes as much as possible
+           my abilities, I also stand out for being a responsible person and
+           efficient, I am permanently involved in the construction of
+           set goals and objectives.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="education" id="skills">
+    <div class="container_education">
+      <div class="container_knowledge">
+        <h2 class="title_container_knowledge">Academic training and skills</h2>
+        <!-- <div class="container_carousol">
+          <h3 class="subtitle_title_container_knowledge">Academic training</h3>
+          <div class="line"></div>
+          <div class="carousel">
+            <div class="carousel__contenedor">
+              <div class="carousel__lista">
+                <div class="carousel__elemento">
+                  <div class="education_logo">
+                    <img src="./img/colombo.png" class="icon_colombo" alt="" />
+                  </div>
+                  <div class="education_information">
+                    <div class="education_information_title">
+                      <h2>Colegio Colombo Latino</h2>
+                    </div>
+                    <div class="education_information_description">
+                      <p>Bachiller con énfasis en sistemas </p>
+                      <span>2015 – Soacha</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel__elemento">
+                  <div class="education_logo">
+                    <img src="./img/autonoma_logo.png" alt="" />
+                  </div>
+                  <div class="education_information">
+                    <div class="education_information_title">
+                      <h2>Universidad Autónoma de Colombia </h2>
+                    </div>
+                    <div class="education_information_description">
+                      <p>Estudiante de ultimo semestre en Ingeniería de sistemas
+                      </p>
+                      <span>2022-Bogota</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel__elemento">
+                  <div class="education_logo">
+                    <img src="./img/mision.png" alt="" />
+                  </div>
+                  <div class="education_information">
+                    <div class="education_information_title">
+                      <h2>Universidad Tecnológica de Pereira </h2>
+                    </div>
+                    <div class="education_information_description">
+                      <p>Estudiante del programa Misión Tic 2022 – Ciclo 2
+                      </p>
+                      <span>2022-Bogota</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel__elemento">
+                  <div class="education_logo">
+                    <img src="./img/orace-removebg-preview.png" alt="" />
+                  </div>
+                  <div class="education_information">
+                    <div class="education_information_title">
+                      <h2>Oracle Corporation</h2>
+                    </div>
+                    <div class="education_information_description">
+                      <p>Estudiante del programa ONE – Oracle Next Education
+                      </p>
+                      <span>2022-Bogota</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
           </div>
         </div>
-        <div class="photo_presentation">
-          <img src="img/mancha-removebg-preview.png" class="photo" alt="" />
+        <div role="tablist" class="carousel__indicador"></div> -->
+        <div class="container_carousol">
+          <h3 class="subtitle_title_container_knowledge">Academic training</h3>
+          <div class="line"></div>
+          <div class="carousel">
+            <div class="carousel__contenedor">
+              <div class="carousel__lista1">
+                <div class="carousel__elemento1">
+                  <div class="card_education">
+                    <div class="container_education_elemnets">
+                      <div class="logo_education">
+                        <img src="./img/colombo.png" alt="">
+                      </div>
+                      <dir class="container_information_education">
+                        <div class="title_education"><h2>Colombo Latino School</h2></div>
+                        <div class="description_education">
+                          <span>Graduated with an emphasis on Systems</span>
+                          <span>2015 – Soacha</span>
+                        </div>
+                        
+                      </dir>
+                    </div>
+                    
+
+                  </div>
+                </div>
+                <div class="carousel__elemento1">
+                  <div class="card_education">
+                    <div class="container_education_elemnets">
+                      <div class="logo_education">
+                        <img src="./img/autonoma_logo.png" alt="">
+                      </div>
+                      <dir class="container_information_education">
+                        <div class="title_education"><h2>Autonoma University of Colombia </h2></div>
+                        <div class="description_education">
+                          <span>Final semester student</span>
+                          <span>2022 – Bogota</span>
+                        </div>
+                        
+                      </dir>
+                    </div>
+                    
+
+                  </div>
+                </div>
+                <div class="carousel__elemento1">
+                  <div class="card_education">
+                    <div class="container_education_elemnets">
+                      <div class="logo_education">
+                        <img src="./img/mision.png" alt="">
+                      </div>
+                      <dir class="container_information_education">
+                        <div class="title_education"><h2>Technological University of Pereira </h2></div>
+                        <div class="description_education">
+                          <span>Student of the Misión Tic 2022 program – Cycle 2</span>
+                          <span>2022 – Bogota</span>
+                        </div>
+                        
+                      </dir>
+                    </div>
+                    
+
+                  </div>
+                </div>
+                <div class="carousel__elemento1">
+                  <div class="card_education">
+                    <div class="container_education_elemnets">
+                      <div class="logo_education">
+                        <img src="./img/orace-removebg-preview.png" alt="">
+                      </div>
+                      <dir class="container_information_education">
+                        <div class="title_education"><h2>Oracle Corporation </h2></div>
+                        <div class="description_education">
+                          <span>ONE Program Student – Oracle </span>
+                          <span>2022 – Bogota</span>
+                        </div>
+                        
+                      </dir>
+                    </div>
+                    
+
+                  </div>
+                </div>
+
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div role="tablist" class="carousel__indicador1"></div>
+
+        <div class="container_carousol">
+          <h3 class="subtitle_title_container_knowledge">Managed Technologies</h3>
+          <div class="line"></div>
+          <div class="carousel">
+            <div class="carousel__contenedor">
+              <div class="carousel__lista2">
+                <div class="carousel__elemento2">
+                  <div class="card-pro">
+                    <div class="container_tecnologic">
+                      <div class="logo_tecnologic">
+                        <img src="./img/java.png" alt="">
+                      </div>
+                      <div class="text_tecnologic">
+                        <span>Java</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel__elemento2">
+                  <div class="card-pro">
+                    <div class="container_tecnologic">
+                      <div class="logo_tecnologic">
+                        <img src="./img/php.png" alt="">
+                      </div>
+                      <div class="text_tecnologic">
+                        <span>PHP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel__elemento2">
+                  <div class="card-pro">
+                    <div class="container_tecnologic">
+                      <div class="logo_tecnologic">
+                        <img src="./img/javascript.png" alt="">
+                      </div>
+                      <div class="text_tecnologic">
+                        <span>JAVASCRIPT</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel__elemento2">
+                  <div class="card-pro">
+                    <div class="container_tecnologic">
+                      <div class="logo_tecnologic">
+                        <img src="./img/html.png" alt="">
+                      </div>
+                      <div class="text_tecnologic">
+                        <span>HTML-5</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel__elemento2">
+                  <div class="card-pro">
+                    <div class="container_tecnologic">
+                      <div class="logo_tecnologic">
+                        <img src="./img/css.png" alt="">
+                      </div>
+                      <div class="text_tecnologic">
+                        <span>CSS</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel__elemento2">
+                  <div class="card-pro">
+                    <div class="container_tecnologic">
+                      <div class="logo_tecnologic">
+                        <img src="./img/react.png" alt="">
+                      </div>
+                      <div class="text_tecnologic">
+                        <span>REACT</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel__elemento2">
+                  <div class="card-pro">
+                    <div class="container_tecnologic">
+                      <div class="logo_tecnologic">
+                        <img src="./img/mongodb.png" alt="">
+                      </div>
+                      <div class="text_tecnologic">
+                        <span>MOngoBd</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel__elemento2">
+                  <div class="card-pro">
+                    <div class="container_tecnologic">
+                      <div class="logo_tecnologic">
+                        <img src="./img/mysql.png" alt="">
+                      </div>
+                      <div class="text_tecnologic">
+                        <span>MySql</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+
+
+
+            </div>
+
+
+          </div>
+          
         </div>
       </div>
-    </section>
-    <section id="about">
-      <div class="about_container">
-        <div class="about_photo">
-          <img src="img/Designer _Flatline.svg" alt="" />
+      <div role="tablist" class="carousel__indicador2"></div>
+    </div>
+    
+
+    </div>
+  </section>
+  <!-- <section id="skills">
+    <div class="container_skills">
+      <div class="background_container">
+        <h1>Technical skills and languages</h1>
+        <div class="skills_Frontend">
+          <h2>Front-End</h2>
+          <hr>
+          <div class="container_cards-skills">
+            <div class="card_skills_border">
+              <div class="card-skils_content">
+                <img src="./img/react.png" alt="" />
+              </div>
+            </div>
+            <div class="card_skills_border">
+              <div class="card-skils_content">
+                <img src="./img/javascript.png" alt="" />
+              </div>
+            </div>
+            <div class="card_skills_border">
+              <div class="card-skils_content">
+                <img src="./img/css.png" alt="" />
+              </div>
+            </div>
+            <div class="card_skills_border">
+              <div class="card-skils_content">
+                <img src="./img/html-5.png" alt="" />
+              </div>
+            </div>
+
+          </div>
         </div>
-        <div class="about_me">
-          <h2>About me</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
-            non quis exercitationem culpa nesciunt nihil aut nostrum explicabo
-            reprehenderit optio amet ab temporibus asperiores quasi cupiditate.
-            Voluptatum ducimus voluptates voluptas?
-          </p>
+        <div class="skills_Frontend">
+          <h2>Back-End</h2>
+          <hr>
+          <div class="container_cards-skills">
+            <div class="card_skills_border">
+              <div class="card-skils_content">
+                <img src="./img/java.png" alt="" />
+              </div>
+            </div>
+            <div class="card_skills_border">
+              <div class="card-skils_content">
+                <img src="./img/mysql.png" alt="" />
+              </div>
+            </div>
+            <div class="card_skills_border">
+              <div class="card-skils_content">
+                <img src="./img/php.png" alt="" />
+              </div>
+            </div>
+            <div class="card_skills_border">
+              <div class="card-skils_content">
+                <img src="./img/mongodb.png" alt="" />
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
-    </section>
-    <section id="portfolio">
-      <div class="portfolio_container">
+    </div>
+    <div class="skills_Backend"></div>
+    </div>
+  </section> -->
+
+  <section id="portfolio">
+    <div class="portfolio_container">
+      <div class="background_portafolio">
         <h2>My portfolio</h2>
-        <hr />
-        <div class="conatiner_cards">
-          <div class="card">
-            <div class="up_card">
-              <div class="text_card">
-                <span>Page of cook</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-            <div class="down_card">
-              <div class="container-btn_cards">
-                <a href="" class="icons_card"><i class="fab fa-github"></i></a>
-                <a href="" class="icons_card"><i class="fas fa-code"></i></a>
-                <a href="" class="icons_card"
-                  ><i class="fas fa-globe-americas"></i
-                ></a>
-              </div>
-            </div>
+
+      <div class="conatiner_cards">
+        
+        <div class="card">
+          <div class="up_card">
+            <img class="img_card" src="./img/Notejs.png" alt="">
+             <div class="text_card">
+              <span>Page of Notes</span>
+              <p>Store your notes so you don't forget your earrings.</p>
+            </div> 
           </div>
-          <div class="card">
-            <div class="up_card">
-              <div class="text_card">
-                <span>Page of cook</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-            <div class="down_card">
-              <div class="container-btn_cards">
-                <a href="" class="icons_card"><i class="fab fa-github"></i></a>
-                <a href="" class="icons_card"><i class="fas fa-code"></i></a>
-                <a href="" class="icons_card"
-                  ><i class="fas fa-globe-americas"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="up_card">
-              <div class="text_card">
-                <span>Page of cook</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-            <div class="down_card">
-              <div class="container-btn_cards">
-                <a href="" class="icons_card"><i class="fab fa-github"></i></a>
-                <a href="" class="icons_card"><i class="fas fa-code"></i></a>
-                <a href="" class="icons_card"
-                  ><i class="fas fa-globe-americas"></i
-                ></a>
-              </div>
+          <div class="down_card">
+            <div class="container-btn_cards">
+              <a href="" class="icons_card"><i class="fab fa-github"></i></a>
+              <a href="" class="icons_card"><i class="fas fa-code"></i></a>
+              <a href="" class="icons_card"><i class="fas fa-globe-americas"></i></a>
             </div>
           </div>
         </div>
-        <div class="projects-in-productions"></div>
+        <div class="card">
+          <div class="up_card">
+            <img class="img_card" src="./img/Notejs.png" alt="">
+             <div class="text_card">
+              <span>Page of cook</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div> 
+          </div>
+          <div class="down_card">
+            <div class="container-btn_cards">
+              <a href="" class="icons_card"><i class="fab fa-github"></i></a>
+              <a href="" class="icons_card"><i class="fas fa-code"></i></a>
+              <a href="" class="icons_card"><i class="fas fa-globe-americas"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="up_card">
+            <img class="img_card" src="./img/Notejs.png" alt="">
+             <div class="text_card">
+              <span>Page of cook</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div> 
+          </div>
+          <div class="down_card">
+            <div class="container-btn_cards">
+              <a href="" class="icons_card"><i class="fab fa-github"></i></a>
+              <a href="" class="icons_card"><i class="fas fa-code"></i></a>
+              <a href="" class="icons_card"><i class="fas fa-globe-americas"></i></a>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </section>
-    <section id="contacs">
-      <div class="container_contacs">
-        <div class="container_information">
-          <div class="data_contacs">
-            <h2>Santiago Orjuela</h2>
-            <ul class="lista_contacs">
-              <li>
-                <a href=""
-                  ><img src="img/correo-electronico.png" />
-                  santiagoorrjuela822@hotmail.com</a
-                >
-              </li>
-              <li>
-                <a href=""
-                  ><img src="img/apple.png" /> 3016337950 - 3016337950</a
-                >
-              </li>
-              <li>
-                <a href=""
-                  ><img src="img/map.png" /> Calle 70 B 77 I 51 Sur Bogota DC</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="btn_alter">
-            <a href=""><img src="img/linkedin.png" alt="" /></a>
-            <a href="https://wa.link/bb38ni"
-              ><img src="img/whatsapp.png" alt=""
-            /></a>
-            <a href=""><img src="img/facebook.png" alt="" /></a>
-          </div>
+      <div class="projects-in-productions"></div>
+    </div>
+
+      </div>
+      
+  </section>
+  <section id="contacs">
+    <div class="container_contacs">
+      <div class="container_information">
+        <div class="data_contacs">
+          <h2>Santiago Orjuela</h2>
+          <ul class="lista_contacs">
+            <li>
+              <a href="https://mail.google.com/mail/u/1/#inbox?compose=CllgCJvrcdnMxQmvmCzcvpNZkkXZvZHCsvpfPkrGBBMSGcCqpQqxMjTgWJtngBDtZtLSlKwwbjB"><img src="img/correo-electronico.png" />
+                santiagoorjuela812@gmail.com</a>
+            </li>
+            <li>
+              <a ><img src="img/apple.png" /> 3016337950 </a>
+            </li>
+            <li>
+              <a href="https://goo.gl/maps/iKvFwiH5JAjz8E438"><img src="img/map.png" /> CLL 70 B 77 I 51 South Bogota DC</a>
+            </li>
+          </ul>
         </div>
-        <div class="container_form">
-          <h2>Send me a message</h2>
-          <form action="" class="form">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Place your message here …
-          "
-            ></textarea>
-            <button>Send message</button>
-          </form>
+        <div class="btn_alter">
+          <a href="https://www.linkedin.com/in/santiago-orjuela-sierra-783648243/"><img src="img/linkedin.png" alt="" /></a>
+          <a href="https://wa.link/bb38ni"><img src="img/whatsapp.png" alt="" /></a>
+          <a href="https://www.facebook.com/santiagoorjuela8/"><img src="img/facebook.png" alt="" /></a>
         </div>
       </div>
-    </section>
-    <script src="js/funtion.js"></script>
-  </body>
+      <div class="container_form">
+        <h2>Send me a message</h2>
+        <form action="" class="form">
+          
+
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea name="" id="" cols="30" rows="10" placeholder="Place your message here …
+          "></textarea>
+          <button>Send message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+
+  <script src="js/funtion.js"></script>
+  <script src="./js/slider.js"></script>
+</body>
+
 </html>

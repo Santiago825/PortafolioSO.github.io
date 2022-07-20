@@ -22,7 +22,7 @@
     box-sizing: border-box;
 }
 body{
-    background: rgb(58, 57, 115);
+    background: #3a3973;
 
 }
 html{
@@ -41,11 +41,17 @@ section[id]{
     height: 100px;
     position: fixed;
     background: #3a3973;
+    z-index: 9;
+    transition: 0.5s;
 
+}
+
+.icon-menu{
+    display: none;
 }
 .nav_bar:hover{
     background: rgb(0, 0, 0);
-    transition: 0.5s;
+    
 }
 .logo_header{
     width: 100%;
@@ -65,9 +71,10 @@ section[id]{
     width: 100%;
     justify-content: center;
     color: white;
-    
-    
-    
+    transition: all 0.9s;
+
+
+
 }
 nav hr{
     margin: 0 300px;
@@ -77,18 +84,20 @@ nav hr{
     box-shadow: 10px 0 10px black;
 }
 .menu_item{
-    
+
     padding: 10px;
 }
 .menu_item a{
     color: white;
     text-decoration: none;
+    
 }
 .menu_item a:hover{
 
     color: #ffc000;
     font-weight: bold;
     
+
 }
 
 /* ++++++++++++++ Presentacion ++++++++++++++++++ */
@@ -96,12 +105,12 @@ nav hr{
 .container_presentation{
 
     width: 90%;
-    height: 100vw;
+
     margin: 0 auto;
     background: rgb(58, 57, 115);
     margin-top: 130px;
     display: grid;
-    
+
     grid-template-columns: 1fr 1fr;
 
 
@@ -129,15 +138,23 @@ nav hr{
     margin-bottom: 10px;
     font-family: "Acme";
     color: rgb(255, 192, 0);
-    
+
 }
 .text_presentation h3 span{
     color: white;
     font-size: 35px;
 }
-.text_presentation p{   
+.text_presentation p{
     text-align: justify;
+    font-size: 16px;
+    font-family: "Acme";
 }
+.text_presentation p span{
+    color: #c8ff00;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .btn-presentation{
     margin: 0 auto;
     display: flex;
@@ -155,9 +172,10 @@ nav hr{
     margin: 10px;
     color: black;
     font-weight: bold;
-    
+
     margin-top: 30px;
     border-radius: 5px;
+    transition: all 0.5s;
 }
 .btn-presentation a:hover{
     background: white;
@@ -173,13 +191,13 @@ nav hr{
 
 /* + + + +  about   + + + +  */
 .about_container{
-    
+
     display: grid;
     width: 100%;
     height: 100vh ;
     margin: 0 auto;
 
-    background: white;
+    background: #232222;
     grid-template-columns: 1fr 1fr;
 
 }
@@ -192,66 +210,276 @@ nav hr{
 .about_me h2{
     font-size: 38px;
     font-family: "Oleo";
+    color: white;
 }
 .about_me p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
+    color: white;
+    width: 80%;
+    text-align: justify;
+    font-family: "Acme";
 }
+/* +++++++     education ++++++++++++++++++ */
+.education{
+
+    width: 100%;
+    height: 100%;
+}
+.container_education{
+    background: rgba(255, 255, 255, 0.892);
+    padding: 0 0 60px 0;
+   
+}
+.container_knowledge{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    position: relative;
+    
+  }
+  .container_knowledge .title_container_knowledge{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    background: #232222;
+    width: 70%;
+
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+  
+    font-family: "Oleo";
+    
+  }
+  .container_carousol{
+
+    width: 70%;
+
+    margin: 0 auto;
+  
+  }
+  .container_carousol .subtitle_title_container_knowledge{
+  
+    border-bottom: 2px solid black;
+    width: 30%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-family: "Acme";
+    font-size: 25px;
+  }
+  
+
+
+  .carousel__lista{
+    overflow: hidden;
+
+  }
+ 
+.card_education {
+    width: 190px;
+    height: 420px;
+
+    border-radius: 30px;
+    background: #ffc000;
+    box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff;
+}
+.container_education_elemnets{
+    display: flex;
+    flex-direction: column;
+    
+}
+.logo_education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding: 25px;
+   
+}
+.logo_education img{
+    height: 60%;
+     
+}
+.container_information_education{
+    display: flex;
+    flex-direction: column;
+     border-top-right-radius: 50px; 
+    text-align: center;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+
+
+    height: 300px;
+    
+  
+    
+    
+}
+
+.title_education{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+
+    padding: 10px 0;
+    margin: 15px ;
+
+
+}
+.title_education h2{
+    font-family: "Acme";
+    font-size: 20px;
+}
+.description_education{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.container_information_education span{
+    font-family: "Acme";
+    font-size: 15px;
+    margin: 10px 0;
+}
+.container_information_education span:nth-child(1){
+    
+    height: 60px;
+}
+
+
+
+
+  
+ 
+
+  /* ++++++++++++++ parte 2 ************ */
+  .container_tecnologic{
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+  }
+  .logo_tecnologic{
+    padding: 15px;
+  }
+  .text_tecnologic{
+
+    font-family: "Oleo";
+    font-size: 25px;
+    margin-top: 40px;
+    border-top: 2px solid white;
+
+    color: white;
+  }
+  .text_tecnologic{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .card-pro {
+    width: 12.5rem;
+    height: 17rem;
+    
+
+    background-color: #212121;
+    border-radius: 1rem;
+    border: #212121 0.2rem solid;
+    transition: all 0.4s ease-in;
+    box-shadow: 0.4rem 0.4rem 0.6rem #00000040;
+   }
+   
+   .card-pro:hover {
+
+    border: #df9a12 0.2em solid;
+    border-radius: 2.5rem 0 2.5rem 0;
+   }
+  
+  
+   
+
+
+
+
+
+  
+
+
 
 /* + + +  portfolio ** + + + */
 
 .portfolio_container{
-    width:100%;
-    height: 150vh ;
-    margin: 0 auto;
-    /* margin-top: 100px; */
-    background:rgba(245, 184, 55, 0.821);
+    background: url(../img/background_skills.jpg);
     display: block;
-}
-.portfolio_container h2{
-    color: white;
-    width: 100%;
-    text-align: center;
-    font-size: 36px;
-    padding: 70px 0 20px 0 ;
-    font-family: "Oleo";
+    width:100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    margin: 0 auto;
 
 }
-div hr{
-    margin-top: 100px;
-    margin: 0 300px;
-    background:rgb(255, 192, 0);
-    height: 5px;
-    margin-bottom: 70px;
+.background_portafolio{
+    background: #127cdfa2;
+    width: 100%;
+    height: 100%;
+
 }
+.portfolio_container h2{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    color: white;
+    width: 70%;
+    text-align: center;
+    font-size: 36px;
+    padding: 20px 0;
+    font-family: "Oleo";
+    background: #212121;
+    margin-bottom: 120px;
+  
+
+}
+
 .conatiner_cards{
+    
     display: grid;
     width: 80%;
     grid-template-columns: 1fr 1fr 1fr;
-
     margin: 0 auto;
-
 
 }
 .card{
-    border: 1px solid black;
+    
     margin: 5px;
     display: block;
     width: 300px;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 30px;
     background: #3a3973;
-    
-    
+    box-shadow: 15px 15px 30px #bebebe,
+    -15px -15px 30px #ffffffd1;
+    cursor: pointer;
+
+
 }
 .up_card{
-    background: url(../img/cocina.jpg);
+    position: relative;
     background-size: cover;
     height: 200px;
-
-
 }
+.img_card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 .text_card{
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -261,11 +489,19 @@ div hr{
     height: 100%;
     margin: 0 auto;
     margin-bottom: 5px;
+    transition: all 0.5s;
+
+
+}
+.text_card:hover{
+    background: none;
+    color: #21212100;
 
 }
 .text_card span{
     font-size: 20px;
 }
+
 
 .container-btn_cards{
     display: flex;
@@ -277,6 +513,17 @@ div hr{
 }
 .container-btn_cards a i{
     color:white;
+    transition: all 0.5s;
+
+}
+.fa-github:hover{
+    color: rgb(31, 26, 26);
+}
+.fa-code:hover{
+    color: rgb(206, 84, 84);
+}
+.fa-globe-americas:hover{
+    color: rgb(99, 99, 211);
 }
 
 /* Contacs */
@@ -309,7 +556,7 @@ div hr{
 .lista_contacs{
     list-style: none;
     text-decoration: none;
-    
+
 }
 .lista_contacs a{
     display: flex;
@@ -319,7 +566,7 @@ div hr{
     color: black;
     font-family: "Abril";
     font-weight: none;
-    
+
 }
 .lista_contacs a img{
     font-size: 30px;
@@ -330,7 +577,7 @@ div hr{
 
 /* ++++++++++++++++++alternayivas de contacto++++++++++++++++++++++++++++++ */
 .btn_alter{
- 
+
     display: flex;
     text-align: center;
     justify-content: center;
@@ -378,6 +625,12 @@ div hr{
     margin: 5px;
     border-radius: 5px;
     padding: 10px;
+    
+}
+.form textarea{
+    resize: none;
+
+
 }
 .form button{
     width: 80%;
@@ -391,12 +644,16 @@ div hr{
     font-family: "Oleo";
 }
 
+
+
+
+
 @media screen and (max-width:680px) {
     section[id]{
         scroll-margin-top: 60px;
     }
     .nav_bar{
-        display: flex; 
+        display: flex;
         height: 80px;
         justify-content: space-between;
         padding: 10px 18px;
@@ -419,9 +676,10 @@ div hr{
         display: flex;
 
         width: 0;
-        justify-content: start;   
+        justify-content: start;
     }
     .icon-menu{
+    display: block;
     justify-content: center;
     color: #ffc000;
     font-size: 35px;
@@ -430,15 +688,15 @@ div hr{
     .mostrar{
         transition: all 5s;
         display: block;
-        
+
     }
-    
-    
+
+
     /* ++++++++++++++ Presentacion ++++++++++++++++++ */
     .container_presentation{
         grid-template-columns: 1fr;
         width: 100%;
-        margin-bottom: 100px;   
+        margin-bottom: 100px;
     }
     .text_presentation{
         width: 100%;
@@ -467,7 +725,7 @@ div hr{
         width: 100%;
         display: flex;
         justify-content: center;
-        
+
     }
     .about_photo img{
         width: 70%;
@@ -483,24 +741,104 @@ div hr{
         font-size: 15px;
         margin-bottom: 130px;
     }
+    /* +++++++++++ education +++++++++ */
+    .container_knowledge{
+        
+        width: 100%;
+    }
+    .container_knowledge .title_container_knowledge{
+        font-size: 30px;  
+    }
+    .container_carousol{
+        width: 90%;
+    }
+    /* parte 1 */
+    .card_education{
+        width: 9rem;
+        margin-left: 10px;
+        height: 380px;
+    }
+    .logo_education{
+        height: 150px;
+    }
+    .logo_education img{
+        height: 90%;
+    }
+    .title_education{
+      
+        height: 60px;
+        
+    }
+    .title_education h2{
+       font-size: 15px; 
+    }
+
+    /* parte 2 */
+    .card-pro {
+        width: 9rem;
+    }
+    .text_tecnologic{
+        font-size: 20px;
+    }
+
+ 
+
+
+
+    /* skills */
+    .container_skills{
+        background: url(../img/background_skills_phone.jpg);
+        overflow: hidden;
+        background-size: 100% 100%;
+        
+        
+    }
+    .container_skills h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .container_cards-skills{
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+
+    }
+    .card_skills_border {
+        width: 120px;
+        height: 184px;
+    }
+    .card-skils_content {
+        width: 120px;
+        height: 184px;
+    }
+
+
+
+
+
+
     /* + + +  portfolio ** + + + */
     .portfolio_container{
         height: auto;
-        
+        background: url(../img/background_skills_phone.jpg);
+        background-size: 100% 100%;
+       
+
+
     }
     .portfolio_container h2{
         padding: 40px 0 60px 0 ;
 
-       
+
 
     }
     .conatiner_cards{
-        width: 100%;
+        width: 80%;
         grid-template-columns: 1fr ;
+        gap: 50px;
 
     }
     .card{
-        width: 90%;
+        width: 70%;
         margin-bottom: 15px;
     }
 
@@ -509,28 +847,28 @@ div hr{
         order: reverse;
         grid-template-columns: 1fr;
         height: auto;
-        
+
         grid-template-rows: 1fr 1fr;
         background: linear-gradient(0deg, #3a3973 50%, #ffffff 50%);
     }
     .container_information{
         width: 100%;
-        
+
         justify-content: center;
     }
     .lista_contacs{
         width: 85%;
-        margin: 0 auto; 
+        margin: 0 auto;
     }
     .lista_contacs a{
         font-size: 15px;
-        
+
     }
     /* +++++++++++++++++++++formulario +++++++++++++++++++++ */
     .container_form{
         width: 90%;
         display: grid;
-        
+
     }
     .container_form h2{
         margin: 40px 0;
