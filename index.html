@@ -490,6 +490,18 @@
       
   </section>
   <section id="contacs">
+    <div class="container_alert_todo">
+
+      <div class="container_alert">
+        <div class="container_image_alert">
+          <div class="image_alert"></div>
+        </div>
+        <span class="mensaje_enviado"></span>
+        <div class="btn-aceptar">Aceptar</div>
+      </div>
+    </div>
+
+
     <div class="container_contacs">
       <div class="container_information">
         <div class="data_contacs">
@@ -515,15 +527,19 @@
       </div>
       <div class="container_form">
         <h2>Send me a message</h2>
-        <form action="" class="form">
-          
-
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <textarea name="" id="" cols="30" rows="10" placeholder="Place your message here …
-          "></textarea>
+        <form class="form" netlify>
+          <input type="text" placeholder="Name" name="name" />
+          <span class="text_required">* Ingrese un valor valido en el nombre</span>
+          <input type="email" placeholder="Email" name="emial" />
+          <span class="text_required">* Ingrese una deireccion de correo valida</span>
+          <!-- <textarea name="" id="" cols="30" rows="10" placeholder="Place your message here …
+          "></textarea> -->
           <button>Send message</button>
         </form>
+        
+
+
+
       </div>
     </div>
   </section>
