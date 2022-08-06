@@ -650,16 +650,22 @@ nav hr{
     width: 80%;
     display: none;
 }
+.no-scroll {
+    /* Debe tener altura específica para que funcione */
+    max-height: 100vh;
+    overflow: hidden;
+}
 .container_alert_todo{
-
     position: absolute;
+    display: none;
+    overflow: hidden;
     width: 100%;
     height: 100vh;
     background: #030303b6;
 
     justify-content: center;
     align-items: center;
-    display: none;
+    
 }
 .container_alert{
     
