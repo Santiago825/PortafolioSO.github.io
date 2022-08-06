@@ -527,14 +527,16 @@
       </div>
       <div class="container_form">
         <h2>Send me a message</h2>
-        <form class="form" netlify>
-          <input type="text" placeholder="Name" name="name" />
-          <span class="text_required">* Ingrese un valor valido en el nombre</span>
-          <input type="email" placeholder="Tu Email" name="emial" />
-          <span class="text_required">* Ingrese una direccion de correo valida</span>
-          <textarea name="menssage" id="" cols="30" rows="10" placeholder="Place your message here …
+        <form class="form" id="formulario" netlify ">
+          <input type="text" placeholder="Name" id="name" name="name" />
+          <span class="text_required " id="errorName">* Ingrese un valor valido en el nombre</span>
+          <input type="text" placeholder="Tu Email" id="email" name="emial" />
+          <span class="text_required" id="errorEmail">* Ingrese una direccion de correo valida</span>
+          <textarea name="menssage"  id="menssage" cols="30" rows="10" placeholder="Place your message here …
           "></textarea>
-          <button>Send message</button>
+          <span class="text_required" id="errorMessage">* Ingrese una direccion de correo valida</span>
+          <div class="btn-enviar" id="btn-enviar">Send amessage</div>
+      
         </form>
         
 
@@ -545,8 +547,10 @@
   </section>
   <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
 
-  <script src="js/funtion.js"></script>
   <script src="./js/slider.js"></script>
+  <script src="js/funtion.js"></script>
+  <script src="js/ValidarFormulario.js"></script>
+
 </body>
 
 </html>

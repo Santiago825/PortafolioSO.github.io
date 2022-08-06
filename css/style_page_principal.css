@@ -632,7 +632,7 @@ nav hr{
 
 
 }
-.form button{
+.btn-enviar{
     width: 80%;
     margin: 10px;
     padding: 10px;
@@ -642,6 +642,7 @@ nav hr{
     font-size: 20px;
     font-weight: bold;
     font-family: "Oleo";
+    text-align: center;
 }
 
 .text_required{
@@ -655,7 +656,7 @@ nav hr{
     width: 100%;
     height: 100vh;
     background: #030303b6;
-    display: flex;
+
     justify-content: center;
     align-items: center;
     display: none;
